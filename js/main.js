@@ -1,32 +1,18 @@
-var lista=[""];
+var agrega = document.getElementById("agregaLista");
 
-function inic(){
-  vistaLista = document.getElementById("vistaLista");
-  tarea_nueva = document.getElementById("tarea_nueva");
-  
-}
-
-function generar_vista(){
-	vistaLista.innerHTML = "";
-	vistaLista.innerHTML += "<input type='text'>" + lista[i] 
-	+ "<button class='btnGuardar' onclick='guardar()'></button>";
-	
-} 
-
-function guardar(){
-	vistaLista.innerHTML = "";
-	for (var i = 1; i < lista.length; i++) {
-		vistaLista.innerHTML += "<p>" + lista[i]
-		+ "</p>";
-	}
-} 
+agrega.addEventListener("focus", function(){
+	agrega.style.background = "#F693FF";
+});
 
 
-function agregar_lista(){
-  generar_vista();
-}
 
-function agregar_lista(){
-  lista.push(tarea_nueva.value);
-  generar_vista();
-}
+agrega.addEventListener("click", function(){
+	var contenedor = document.createElement("div");
+	var listaInpu = document.createElement("input");
+	var buttonAgregar = document.createElement("button");
+	var textButt = document.createTextNode("añadir lista");
+	buttonAgregar.appendChild(textButt);
+    contenedor.appendChild(buttonAgregar);
+    contenedor.appendChild(listaInpu);
+});
+
