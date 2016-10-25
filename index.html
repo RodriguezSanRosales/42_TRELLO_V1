@@ -11,20 +11,41 @@
 	<div class="container-fluid">
 		<header>
 			<div class="row">
-				<div class="col-xs-12 col-sm-12 col-md-12">
+				<div class="col-xs-4 col-sm-4 col-md-4">
+					<ul>
+						<li class="backg">Tableros</li>
+					</ul>
+				</div>
+				<div class="col-xs-4 col-sm-4 col-md-4">
 					<h1>TRELLO</h1>
+				</div>
+				<div class="col-xs-4 col-sm-4 col-md-4">
+					<ul><!--solo por estilo-->
+						<li class="cajaColor"><span class="glyphicon glyphicon-plus" aria-hidden="true"></span></li>
+						<li class="backg cajaColor">Sandra Rodríguez</li>
+						<li class="cajaColor"><span class="glyphicon glyphicon-info-sign" aria-hidden="true"></li>
+						<li class="cajaColor"><span class="glyphicon glyphicon-bell BackRed" aria-hidden="true"></li>
+					</ul>
 				</div>
 			</div>
 		</header>
 		<section>
 			<div class="row">
 				<div class="col-xs-12 col-sm-12 col-md-12">
-					<div>
-						<input type="text" id="agregaLista" placeholder="añadir una lista">	
-					</div><!--en esta parte se agregara la lista-->
+					<h4>Título Tablero</h4>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-xs-12 col-sm-12 col-md-12">
+					<div id="guardaContenedor">
+						<form id="formList">
+							<input type="text" id="agregaLista" placeholder="añadir una lista">	<!--en esta parte se agregara la lista-->
+						</form>	
+					</div>
 				</div>
 			</div>
 		</section>
 	</div>
+	<script  src="js/main.js"></script>
 </body>
 </html>
